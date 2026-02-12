@@ -15,40 +15,100 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const categories = [
-  { name: "All", count: 24 },
-  { name: "Marketing Automation", count: 8 },
+  { name: "All", count: 26 },
+  { name: "Business Management", count: 1 },
+  { name: "Scheduling", count: 1 },
+  { name: "Website Builder", count: 1 },
+  { name: "Portfolio", count: 1 },
+  { name: "Marketing Automation", count: 1 },
   { name: "Sales Funnels", count: 6 },
   { name: "Email Marketing", count: 5 },
   { name: "CRM Tips", count: 3 },
-  { name: "Case Studies", count: 2 },
+  { name: "Case Studies", count: 4 },
 ];
 
 const featuredPost = {
-  slug: "complete-guide-marketing-automation-2024",
-  title: "The Complete Guide to Marketing Automation in 2024",
+  slug: "all-in-one-business-management-platform-2026",
+  title: "Why Pakistani Startups Need an All-in-One Business Management Platform in 2026",
   excerpt:
-    "Discover how to leverage the latest automation tools and strategies to scale your business and increase conversions.",
-  author: "Alex Rivera",
-  date: "Jan 15, 2024",
-  readTime: "12 min read",
-  category: "Marketing Automation",
-  image: "/images/hero-automation.jpg",
-  authorImage: "/images/team-collaboration.jpg",
+    "Centralize your tools, cut subscriptions, and run your startup smarter with an all-in-one platform designed for Pakistani founders.",
+  author: "ScaleFlow Team",
+  date: "Feb 13, 2026",
+  readTime: "7 min read",
+  category: "Business Management",
+  image: "images/smallbusinesses1.png",
+  authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
 };
 
 const blogPosts = [
   {
-    slug: "5-email-sequences-every-business-needs",
-    title: "5 Email Sequences Every Business Needs",
-    excerpt: "Learn the essential email automation sequences that can transform your customer journey.",
-    author: "Jordan Chen",
-    date: "Jan 12, 2024",
-    readTime: "8 min read",
-    category: "Email Marketing",
-    image: "/images/service-automation.jpg",
-    authorImage: "/images/service-crm.jpg",
+    slug: "all-in-one-business-management-platform-2026",
+    title: "Why Pakistani Startups Need an All-in-One Business Management Platform in 2026",
+    excerpt: "Consolidate tools and cut costs with a unified business management platform built for Pakistani founders.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "7 min read",
+    category: "Business Management",
+    image: "images/smallbusinesses1.png",
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
   },
   {
+    slug: "marketing-automation-small-businesses-pakistan-2026",
+    title: "Marketing Automation for Small Businesses in Pakistan – The 2026 Guide",
+    excerpt: "Save time and boost sales using email, SMS, CRM, and AI workflows designed for Pakistani businesses.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "12 min read",
+    category: "Marketing Automation",
+    image: "/images/automation.png",
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
+  },
+ {
+    
+    slug: "how-one-business-3x-revenue-90-days-marketing-automation",
+    title: "How One Business 3X'd Revenue in 90 Days Using Marketing Automation",
+    excerpt: "A real case study: How one e-commerce brand tripled revenue without increasing ad spend by implementing marketing automation.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "10 min read",
+    category: "Case Studies",
+    image: "/images/team-collaboration.jpg",
+    authorImage: "/images/hero-automation.jpg",
+  },
+  {
+    slug: "online-appointment-scheduling-pakistan",
+    title: "Online Appointment Scheduling Software Pakistan",
+    excerpt: "Reduce no-shows, enable 24/7 bookings, and look more professional with smart scheduling.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "6 min read",
+    category: "Scheduling",
+    image: "images/appointment.png",
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
+  },
+  {
+    slug: "website-builder-pakistan-no-code",
+    title: "Website Builder Pakistan – Create Professional Websites Without Coding",
+    excerpt: "Build a modern, professional website with drag-and-drop tools and AI helpers — no developer needed.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "7 min read",
+    category: "Website Builder",
+    image: "/images/builder.png",
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
+  },
+  {
+    slug: "building-first-website-portfolio-guide",
+    title: "Step-by-Step Guide: Building Your First Website & Portfolio with ScaleFlow",
+    excerpt: "A practical guide to building your professional portfolio from platform choice to SEO and launch.",
+    author: "ScaleFlow Team",
+    date: "Feb 13, 2026",
+    readTime: "8 min read",
+    category: "Portfolio",
+    image: "/images/website.jpg",
+    authorImage: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=60",
+  }, 
+    /*{
     slug: "building-high-converting-sales-funnels",
     title: "Building High-Converting Sales Funnels",
     excerpt: "Master the art of funnel creation with our comprehensive step-by-step guide.",
@@ -58,7 +118,8 @@ const blogPosts = [
     category: "Sales Funnels",
     image: "/images/service-funnels.jpg",
     authorImage: "/images/service-automation.jpg",
-  },
+  },*/
+  /*
   {
     slug: "crm-best-practices-small-business",
     title: "CRM Best Practices for Small Business",
@@ -69,18 +130,9 @@ const blogPosts = [
     category: "CRM Tips",
     image: "/images/service-crm.jpg",
     authorImage: "/images/service-funnels.jpg",
-  },
-  {
-    slug: "case-study-3x-revenue-90-days",
-    title: "Case Study: 3x Revenue in 90 Days",
-    excerpt: "A detailed breakdown of the automation strategies that transformed a coaching business.",
-    author: "Alex Rivera",
-    date: "Jan 5, 2024",
-    readTime: "15 min read",
-    category: "Case Studies",
-    image: "/images/team-collaboration.jpg",
-    authorImage: "/images/hero-automation.jpg",
-  },
+  },*/
+ 
+  /*
   {
     slug: "lead-scoring-ultimate-guide",
     title: "The Ultimate Guide to Lead Scoring",
@@ -91,7 +143,8 @@ const blogPosts = [
     category: "Marketing Automation",
     image: "/images/service-automation.jpg",
     authorImage: "/images/service-crm.jpg",
-  },
+  },*/
+  /*
   {
     slug: "sms-marketing-strategies-2024",
     title: "SMS Marketing Strategies That Work",
@@ -102,7 +155,7 @@ const blogPosts = [
     category: "Marketing Automation",
     image: "/images/hero-automation.jpg",
     authorImage: "/images/service-automation.jpg",
-  },
+  },*/
 ];
 
 export default function BlogPage() {
